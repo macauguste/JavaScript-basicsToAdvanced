@@ -194,7 +194,7 @@ if (height === '23') {
 }
 */
 
-//COding Challegne 2
+//COding Challegne 1
 /*
 var teamJohn1 = parseInt(prompt("Team John first score"));
 
@@ -333,3 +333,43 @@ console.log(john.indexOf(23));
 var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John IS a designer';
 console.log(isDesigner);
 */
+
+//Coding Challenge 2
+
+function tipCalculator(bill) 
+{
+    var percentage;
+    if (bill < 50) 
+        {
+            percentage = .2
+        }
+        else if (bill >= 50 && bill < 200)
+        {
+            percentage = .15
+        }
+        else
+        {
+            percentage = .1
+        }
+    return percentage * bill;
+}
+
+var eachBill = [];
+var tips = [];
+var total = [];
+
+var firstBill = eachBill.push(prompt("How much was your first bill?"));
+console.log(firstBill)
+var secondBill = eachBill.push(prompt("How much was your second bill?"));
+var thirdBill = eachBill.push(prompt("How much was your third bill?"));
+
+var fbTip = tips.push(tipCalculator(eachBill[0]));
+console.log(fbTip);
+var sbTip = tips.push(tipCalculator(eachBill[1]));
+var tbTip = tips.push(tipCalculator(eachBill[2]));
+
+var total = [eachBill[0] + tips[0], eachBill[1] + tips[1], eachBill[2] + tips[2]]
+
+console.log(eachBill);
+console.log(tips);
+console.log(total);
