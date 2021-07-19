@@ -172,4 +172,25 @@ if (age < 13) {
 }
 */
 
+//Truthy and Falsy vales and equality operators
+
+/*
+var height;
+
+height = 23;
+
+if (height || height === '') {
+    console.log("Variable is defined");
+} else {
+    console.log("Variable has not been defined");
+}
+
+// Equallity operator
+
+if (height === '23') {
+    console.log('The operator does type coercion');
+}else{
+    console.log('false');
+}
+*/
 
