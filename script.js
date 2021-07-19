@@ -264,3 +264,39 @@ var janeName = prompt("What is your name?");
 var janeBirthYear = prompt("What is your birth year?");
 var janeInfo = yearsUntilRetirement(janeBirthYear, janeName)
 */
+
+/////Function Statements and Expressions
+
+//Declaratuion
+/*
+function whatDoYouDO(job, firstName){
+
+}
+*/
+
+//Expression
+var whatDoYouDo = function(job, firstName)
+{
+    switch (job) 
+    {
+        case 'teacher':
+            return firstName + ' teaches kids how to code';
+
+        case 'driver':
+            return firstName + ' drives a cab in Lisbon';
+
+        case 'designer': 
+            return firstName + ' designs beautiful websites';
+    
+        default:
+            return firstName + ' does something else';
+    }
+
+}
+
+var fName = prompt("What is your name?")
+var job = prompt("What do you do for a living?")
+
+console.log(whatDoYouDo(job, fName));
+
+
