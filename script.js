@@ -66,6 +66,7 @@ console.log(typeof x);
 Operator Precedence
 */
 
+/*
 var now = 2018;
 var yearJohn = 1989;
 var fullAge = 18;
@@ -103,4 +104,18 @@ console.log(x);
 x--;
 
 console.log(x);
+*/
 
+//CodingChallenge
+
+var heightOfMark = prompt("What is Mark's height?");
+var massOfMark = prompt("What is Mark's mass?");
+
+var heightOfJohn = prompt("What is John's height");
+var massOfJohn = prompt("What is John's mass?");
+
+markBMI = massOfMark / (heightOfMark * heightOfMark);
+johnBMI = massOfJohn / (heightOfJohn * heightOfJohn);
+
+var higherBMI = markBMI > johnBMI;
+console.log("Is Mark's BMI higher than John's? " + higherBMI);
