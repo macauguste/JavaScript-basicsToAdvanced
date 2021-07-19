@@ -423,3 +423,41 @@ john.age = john.calcAge();
 john.calcAge();
 console.log(john);
 */
+
+///COding Challenge 4
+/*
+var john = {
+    fullName: "John Bond",
+    mass: 300,
+    height: 1.96,
+   
+    calcBMI: function()
+    {
+        this.Bmi = this.mass / (this.height * this.height)
+        return this.Bmi;
+    }
+};
+
+var mark = {
+    fullName: "Mark Bond",
+    mass: 150,
+    height: 1.66,
+   
+    calcBMI: function()
+    {
+        this.Bmi = this.mass / (this.height * this.height)
+        return this.Bmi;
+    }
+};
+
+if (john.calcBMI() > mark.calcBMI()){
+    console.log(john.fullName +"("+ john.Bmi +") Has Higher BMI");
+} else if(mark.Bmi > john.Bmi){
+    console.log(mark.fullName +"("+ mark.Bmi +") Has Higher BMI");
+} else{
+    console.log("John and Mark have the same BMI");
+}
+
+console.log(john);
+console.log(mark);
+*/
