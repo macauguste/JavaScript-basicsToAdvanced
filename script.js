@@ -335,7 +335,7 @@ console.log(isDesigner);
 */
 
 //Coding Challenge 2
-
+/*
 function tipCalculator(bill) 
 {
     var percentage;
@@ -373,3 +373,53 @@ var total = [eachBill[0] + tips[0], eachBill[1] + tips[1], eachBill[2] + tips[2]
 console.log(eachBill);
 console.log(tips);
 console.log(total);
+
+*/
+
+///Objects and properties
+/*
+var john = {
+    firstName: "John",
+    lastName: "Smith",
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: "teacher",
+    isMarried: false
+};
+
+console.log(john)
+console.log(john['lastName'])
+
+var x = 'birthYear';
+console.log(john[x]);
+
+john.job = 'designer';
+john['isMarried'] = true;
+console.log(john);
+
+var jane = new Object();
+jane.name = 'Jane';
+jane.birthYear = 1969;
+jane['lastName'] = 'Smith'
+console.log(jane);
+*/
+
+///Objescts and methods
+/*
+var john = {
+    firstName: "John",
+    lastName: "Smith",
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: "teacher",
+    isMarried: false,
+    calcAge: function()
+    {
+        this.age = 2021 - this.birthYear;
+    }
+};
+
+john.age = john.calcAge();
+john.calcAge();
+console.log(john);
+*/
