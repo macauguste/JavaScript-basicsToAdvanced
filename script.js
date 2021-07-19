@@ -233,3 +233,34 @@ if (teamJohn > teamMike && teamJohn > teamMary ) {
     console.log("We have a Draw! " + teamJohn + ' ' + teamMike + ' ' + teamMary);
 }
 */
+
+//Functions
+
+/*
+function calculateAge(birthYear) {
+    return 2021 - birthYear;
+}
+
+function yearsUntilRetirement(year, firstName) {
+    var age =  calculateAge(year)
+    var retirement = 65 - age;
+
+    if (retirement > 0) {
+        console.log(firstName + "is " + age + " years old" + " retires in " + retirement + " years.");
+    } else {
+        console.log(firstName + "is " + age + " years old" + " is already retired!")
+    }
+}
+
+var johnName = prompt("What is your name?");
+var johnBirthYear = prompt("What is your birth year?");
+var johnInfo = yearsUntilRetirement(johnBirthYear, johnName)
+
+var mikeName = prompt("What is your name?");
+var mikeBirthYear = prompt("What is your birth year?");
+var mikeInfo = yearsUntilRetirement(mikeBirthYear, mikeName)
+
+var janeName = prompt("What is your name?");
+var janeBirthYear = prompt("What is your birth year?");
+var janeInfo = yearsUntilRetirement(janeBirthYear, janeName)
+*/
