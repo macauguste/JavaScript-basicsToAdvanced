@@ -194,3 +194,42 @@ if (height === '23') {
 }
 */
 
+//COding Challegne 2
+/*
+var teamJohn1 = parseInt(prompt("Team John first score"));
+
+var teamJohn2 = parseInt(prompt("Team John second score"));
+
+var teamJohn3 = parseInt(prompt("Team John third score"));
+
+var teamJohn = (teamJohn1 + teamJohn2 + teamJohn3)/3;
+
+
+var teamMike1 = parseInt(prompt("Team Mike first score"));
+
+var teamMike2 = parseInt(prompt("Team Mike second score"));
+
+var teamMike3 = parseInt(prompt("Team Mike third score"));
+
+var teamMike = (teamMike1 + teamMike2 + teamMike3)/3;
+
+
+var teamMary1 = parseInt(prompt("Team Mary first score"));
+
+var teamMary2 = parseInt(prompt("Team Mary second score"));
+
+var teamMary3 = parseInt(prompt("Team Mary third score"));
+
+var teamMary = (teamMary1 + teamMary2 + teamMary3)/3;
+
+
+if (teamJohn > teamMike && teamJohn > teamMary ) {
+    console.log("Team John Wins with an average of " + teamJohn);
+} else if(teamMike > teamJohn && teamMike >  teamMary) {
+    console.log("Team Mike Wins with an average of " + teamMike);
+} else if(teamMary > teamMike && teamMary > teamJohn) {
+    console.log("Team Mary Wins with an average of " + teamMary);
+} else {
+    console.log("We have a Draw! " + teamJohn + ' ' + teamMike + ' ' + teamMary);
+}
+*/
