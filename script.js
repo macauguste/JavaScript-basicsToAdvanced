@@ -663,3 +663,42 @@ function third(){
     console.log(c);
 }
 */
+
+///THis 
+/*
+//function call = global object;
+
+//method call = obect that is calling the method
+
+calculaterAge(1985);
+
+function calculaterAge(year) {
+        console.log(2016 - year);
+        console.log(this);
+}
+
+var john ={
+    name: 'John',
+    yearOfBirth: 1990,
+    calculaterAge: function() {
+         console.log(this);
+         console.log(2016 - this.yearOfBirth);
+        
+         function innerFunction() {
+             console.log(this)
+         }
+         innerFunction();
+         
+    }
+}
+
+john.calculaterAge();
+
+var mike = {
+    name: "Mike",
+    yearOfBirth: 1984,
+}
+
+mike.calculaterAge = john.calculaterAge;
+mike.calculaterAge();
+*/
