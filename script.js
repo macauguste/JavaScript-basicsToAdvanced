@@ -616,3 +616,50 @@ if(john.average > mark.average)
 }
 
 */
+
+///execution contexts ,hosting in pratice , scoping and the scope chain
+/*
+calculateAge(1965)
+
+function calculateAge(year) {
+    console.log(2016-year)
+}
+
+///retirement(1956);
+
+var retirement = function(year){
+    console.log(65 - (2016 - year));
+}
+
+// variables
+
+var age = 23;
+console.log(age);
+
+function foo(params) {
+    var age = 65
+    console.log(age);
+}
+
+foo();
+console.log(age);
+
+
+var a = 'Hello';
+first();
+
+function first() {
+    var b = 'hi';
+    second();
+
+    function second() {
+        var c = 'hey';
+        third();
+    }
+}
+
+function third(){
+    var d = "John";
+    console.log(c);
+}
+*/
