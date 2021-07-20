@@ -507,10 +507,10 @@ for (var i = john.length - 1; i >= 0 ; i--) {
 */
 
 ///Coding challenge 5
-
+/*
 var john = {
     fullName: 'John Smith',
-    bills: [],
+    bills: [10,100,1000,250,249],
     calcTips: function()
     {
         this.tips = [];
@@ -542,16 +542,16 @@ var john = {
     }
 };
 
-for (i = 0; i < 5; i++) {
-    john.bills.push(prompt("Enter Bill " + [i+1]))
-}
+//for (i = 0; i < 5; i++) {
+//    john.bills.push(prompt("Enter Bill " + [i+1]))
+//}
 
 john.calcTips();
 
 
 var mark = {
     fullName: 'Mark Smith',
-    bills: [],
+    bills: [10,100,1000,250,249],
     calcTips: function()
     {
         this.tips = [];
@@ -583,16 +583,36 @@ var mark = {
     }
 };
 
-for (i = 0; i < 5; i++) {
-    mark.bills.push(prompt("Enter Bill " + [i+1]))
+//for (i = 0; i < 5; i++) {
+//    mark.bills.push(prompt("Enter Bill " + [i+1]))
+//}
+//
+
+function calcAverage(tips)
+{
+    var sum = 0;
+    for (let i = 0; i < tips.length; i++)
+    {
+        sum = sum + tips[i]
+    }
+
+return sum / tips.length
 }
-
-function calcAcerage(tips){
-    
-}
-
-
 
 mark.calcTips();
 john.calcTips();
+
+
+john.average = calcAverage(john.tips);
+mark.average = calcAverage(mark.tips);
 console.log(john, mark)
+
+if(john.average > mark.average)
+{
+    console.log(john.fullName + "'s family pays higher tips with an average of $"+john.average);
+}else if (mark.average > john.average)
+{
+    console.log(mark.fullName + "'s family pays higher tips with an average of $"+mark.average);
+}
+
+*/
