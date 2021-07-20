@@ -505,3 +505,94 @@ for (var i = john.length - 1; i >= 0 ; i--) {
     console.log(john[i]);
 }
 */
+
+///Coding challenge 5
+
+var john = {
+    fullName: 'John Smith',
+    bills: [],
+    calcTips: function()
+    {
+        this.tips = [];
+        this.finalValues = [];
+
+        for (var i = 0; i < this.bills.length; i++)
+        {
+            // determine percentage based on tipping rules
+            var percentage;
+            var bill = this.bills[i];
+
+                if (bill < 50) 
+                    {
+                        percentage = .2;
+                    }
+                    else if (bill >= 50 && bill < 200)
+                    {
+                        percentage = .15;
+                    }
+                    else
+                    {
+                        percentage = .1;
+                    }
+                
+            //Add results to correspoinding arrays
+            this.tips[i] = bill * percentage;
+            this.finalValues[i] = bill + bill * percentage;
+        }
+    }
+};
+
+for (i = 0; i < 5; i++) {
+    john.bills.push(prompt("Enter Bill " + [i+1]))
+}
+
+john.calcTips();
+
+
+var mark = {
+    fullName: 'Mark Smith',
+    bills: [],
+    calcTips: function()
+    {
+        this.tips = [];
+        this.finalValues = [];
+
+        for (var i = 0; i < this.bills.length; i++)
+        {
+            // determine percentage based on tipping rules
+            var percentage;
+            var bill = this.bills[i];
+
+                if (bill < 100) 
+                    {
+                        percentage = .2;
+                    }
+                    else if (bill >= 100 && bill < 300)
+                    {
+                        percentage = .1;
+                    }
+                    else
+                    {
+                        percentage = .25;
+                    }
+                
+            //Add results to correspoinding arrays
+            this.tips[i] = bill * percentage;
+            this.finalValues[i] = bill + bill * percentage;
+        }
+    }
+};
+
+for (i = 0; i < 5; i++) {
+    mark.bills.push(prompt("Enter Bill " + [i+1]))
+}
+
+function calcAcerage(tips){
+    
+}
+
+
+
+mark.calcTips();
+john.calcTips();
+console.log(john, mark)
